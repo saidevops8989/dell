@@ -1,0 +1,17 @@
+name: my pipeline
+
+on: push
+
+jobs:
+    frist_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: weclome message
+          run: echo "This is my job"
+
+        - name: date cmd
+          run: date
+
+        - name: list files
+          run: ls
+          
